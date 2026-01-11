@@ -30,19 +30,19 @@
 						{$_('nav_cloud')}
 					</a>
 					<a
-						href="#"
+						href="/coming-soon"
 						class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
 					>
 						{$_('nav_blog')}
 					</a>
 					<a
-						href="#"
+						href="/coming-soon"
 						class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
 					>
 						{$_('nav_news')}
 					</a>
 					<a
-						href="#"
+						href="/coming-soon"
 						class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
 					>
 						{$_('nav_lab_work')}
@@ -81,19 +81,19 @@
 						{$_('nav_cloud')}
 					</a>
 					<a
-						href="#"
+						href="/coming-soon"
 						class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
 					>
 						{$_('nav_blog')}
 					</a>
 					<a
-						href="#"
+						href="/coming-soon"
 						class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
 					>
 						{$_('nav_news')}
 					</a>
 					<a
-						href="#"
+						href="/coming-soon"
 						class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
 					>
 						{$_('nav_lab_work')}

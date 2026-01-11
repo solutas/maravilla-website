@@ -61,7 +61,7 @@
 					</li>
 					<li>
 						<a
-							href="#"
+							href="/coming-soon"
 							class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
 						>
 							{$_('nav_news')}
@@ -69,7 +69,7 @@
 					</li>
 					<li>
 						<a
-							href="#"
+							href="/coming-soon"
 							class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
 						>
 							{$_('nav_lab_work')}
@@ -77,7 +77,7 @@
 					</li>
 					<li>
 						<a
-							href="#"
+							href="/coming-soon"
 							class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
 						>
 							{$_('footer_documentation')}
