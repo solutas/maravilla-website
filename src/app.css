@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+@import '@fontsource/bricolage-grotesque/400.css';
+@import '@fontsource/bricolage-grotesque/500.css';
+@import '@fontsource/bricolage-grotesque/600.css';
+@import '@fontsource/bricolage-grotesque/700.css';
+@import '@fontsource/figtree/400.css';
+@import '@fontsource/figtree/500.css';
+@import '@fontsource/figtree/600.css';
+
+@theme {
+	--font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif;
+	--font-heading: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Glass effect for header */
+.glass {
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+:root.dark .glass {
+	background: rgba(15, 23, 42, 0.8);
+}
+
+/* Animated gradient for hero text */
+@keyframes gradient-shift {
+	0%,
+	100% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+.animate-gradient {
+	background-size: 200% 200%;
+	animation: gradient-shift 4s ease infinite;
+}

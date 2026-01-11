@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maravilla Labs - Building Better Tools for Builders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.8);
+        }
+        
+        @keyframes gradient-shift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient-shift 4s ease infinite;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <!-- Sticky Glass Header -->
+    <header class="sticky top-0 z-50 glass border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <!-- <i data-lucide="flower" class="w-8 h-8 text-blue-600 dark:text-blue-400"></i> -->
+                    <img src="maravilla.svg" alt="Maravilla Labs Logo" class="w-7 h-7 ">
+                    <div class="text-2xl font-bold tracking-tight">Maravilla Labs</div>
+                </div>
+                <div class="flex items-center gap-8">
+                    <nav class="hidden md:flex items-center gap-6">
+                        <a 
+                            href="#" 
+                            class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium flex items-center gap-2"
+                        >
+                            <i data-lucide="cloud" class="w-5 h-5"></i>
+                            Maravilla Cloud
+                        </a>
+                        <a 
+                            href="#" 
+                            class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                        >
+                            Blog
+                        </a>
+                        <a 
+                            href="#" 
+                            class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                        >
+                            News
+                        </a>
+                        <a 
+                            href="#" 
+                            class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                        >
+                            Lab Work
+                        </a>
+                    </nav>
+                    <button 
+                        id="theme-toggle" 
+                        class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+                        aria-label="Toggle theme"
+                    >
+                        <svg id="sun-icon" class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moon-icon" class="w-6 h-6 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-24 md:py-32 text-center px-6">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 tracking-tight">
+                Building Better Tools<br>
+                <span class="bg-gradient-to-r from-blue-600 via-purple-500 to-blue-400 bg-clip-text text-transparent animate-gradient">for Builders</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                Our mission is to help builders create better products for everyone
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Detail Section -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-800/50 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">
+                Democratizing Developer Experience
+            </h2>
+            <div class="space-y-6 text-lg md:text-xl text-slate-700 dark:text-slate-300 leading-relaxed">
+                <p>
+                    Enterprise-grade software exists for good reasons. The sophistication, compliance features, audit trails, 
+                    and robust architecture aren't unnecessary—they're essential for serious applications. But there's a catch: 
+                    making these systems work for your specific needs requires extensive customization and development.
+                </p>
+                <p>
+                    We believe that in the age of AI, these enterprise-grade capabilities shouldn't require massive budgets and 
+                    dedicated teams to implement. Every developer should have access to sophisticated infrastructure that handles 
+                    versioning, branching, multi-tenancy, compliance, and all the complex requirements that typically demand 
+                    extensive custom development.
+                </p>
+                <p>
+                    When foundational infrastructure takes care of these sophisticated needs out of the box, everyone benefits. 
+                    Enterprises get better starting points for their custom solutions. Independent developers can build applications 
+                    with the same level of sophistication. And end users get higher quality software, regardless of who built it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i data-lucide="rocket" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+                        <h3 class="text-2xl font-semibold">Going the Extra Mile</h3>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                        We build tools that go the extra mile so you don't have to. Built-in versioning, compliance tracking, 
+                        audit logs, branching strategies—all the sophisticated features that enterprises demand, 
+                        available out of the box. You focus on your product; we handle the complexity.
+                    </p>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i data-lucide="sparkles" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+                        <h3 class="text-2xl font-semibold">Quality for All</h3>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                        We're elevating the baseline of what every developer can build. When sophisticated infrastructure 
+                        is accessible to all, the overall quality of software improves for everyone. Better tools lead to 
+                        better products, which means better experiences for all humans.
+                    </p>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+                        <h3 class="text-2xl font-semibold">Built to Last</h3>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                        We don't chase trends. We build foundational infrastructure designed to power applications for decades. 
+                        Our tools are battle-tested, performant, and reliable—because your business depends on them.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Europe Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-900 to-blue-600 text-white px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">Built in Europe, for the World</h2>
+            <div class="space-y-6 text-lg md:text-xl leading-relaxed opacity-95">
+                <p>
+                    In an era where data sovereignty matters more than ever, we're proud to build our infrastructure in the heart of Europe. 
+                    Based in Switzerland with close ties to the EU, we understand the importance of data privacy, security, and compliance.
+                </p>
+                <p>
+                    GDPR compliance, data residency requirements, and European privacy standards aren't afterthoughts—they're 
+                    built into our foundation. Your data stays where it should, under regulations you can trust.
+                </p>
+            </div>
+            <div class="mt-12 text-lg opacity-90">
+                <p class="font-semibold text-xl">Maravilla Labs</p>
+                <p>Basel, Switzerland 🇨🇭</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-slate-200 dark:border-slate-800 px-6 bg-slate-50 dark:bg-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="text-2xl font-bold mb-4">Maravilla Labs</div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-4">
+                        Building better tools for builders
+                    </p>
+                    <p class="text-sm text-slate-500 dark:text-slate-500">
+                        Basel, Switzerland 🇨🇭
+                    </p>
+                </div>
+                
+                <!-- Products -->
+                <div>
+                    <h3 class="font-semibold mb-4 text-slate-900 dark:text-slate-100">Products</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://www.raisindb.com" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                RaisinDB
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.maravilla.cloud" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                Maravilla Cloud
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-semibold mb-4 text-slate-900 dark:text-slate-100">Resources</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                News
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                Lab Work
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                Documentation
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Connect -->
+                <div>
+                    <h3 class="font-semibold mb-4 text-slate-900 dark:text-slate-100">Connect</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://github.com/maravillalabs" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello@maravillalabs.com" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-slate-200 dark:border-slate-700 text-center text-slate-600 dark:text-slate-400">
+                <p>&copy; 2025 Maravilla Labs. Building better tools for builders.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        
+        // Check for saved theme preference or default to system preference
+        const currentTheme = localStorage.getItem('theme') || 
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        
+        if (currentTheme === 'dark') {
+            htmlElement.classList.add('dark');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            const theme = htmlElement.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        });
+        
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
